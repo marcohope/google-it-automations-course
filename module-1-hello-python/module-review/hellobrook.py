@@ -1,3 +1,8 @@
+# =============================================
+# Hello, Brook — string concatenation
+# =============================================
+
 name = "Brook"
 print("Hello " + name)
-#Hello Brook
+
+# Output: Hello Brook

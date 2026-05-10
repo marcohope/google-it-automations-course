@@ -1,21 +1,19 @@
-print(10>1)
-#True
-print("cat" == "dog")
-#False
-print (1 != 2)
-#True
+# =============================================
+# Comparison & Logical Operators
+# =============================================
 
-print(1 < "1")
-#Will return a type error
+# ---------- Comparison operators ----------
+print(10 > 1)              # True
+print("cat" == "dog")      # False
+print(1 != 2)              # True
 
-print(1 == "1")
-#False
 
-print("Yellow" > "Cyan" and "Brown" > "Magenta")
-#False
+# ---------- Type-related comparisons ----------
+# print(1 < "1")           # TypeError — can't compare int with str
+print(1 == "1")            # False (different types)
 
-print(25 > 50 or 1 != 2)
-#True
 
-print(not 42 == "Answer")
-#True
+# ---------- Logical operators: and / or / not ----------
+print("Yellow" > "Cyan" and "Brown" > "Magenta")   # False
+print(25 > 50 or 1 != 2)                           # True
+print(not 42 == "Answer")                          # True

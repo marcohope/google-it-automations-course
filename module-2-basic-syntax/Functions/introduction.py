@@ -1,6 +1,12 @@
-# This is a simple function that takes in a name and a grade, and prints out a message with the name and grade.
+# =============================================
+# Introduction to Functions
+# A simple function that takes a name and grade and prints a message
+# =============================================
+
 def grade(name, grade):
     print(name + " scored " + str(grade))
 
-grade("angel",100)
-grade("marco",99)
+
+# ---------- Test ----------
+grade("angel", 100)
+grade("marco", 99)
