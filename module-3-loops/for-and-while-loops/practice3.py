@@ -1,13 +1,20 @@
-input = "Four score and seven years ago"
+# =============================================
+# Practice — Looping through a string for vowels
+# =============================================
 
-# for c in input:
-#   if c.lower() in ['a', 'e', 'i', 'o', 'u']:
-#     print(c)
+text = "Four score and seven years ago"
 
-# print([c for c in input if c.lower() in ['a', 'e', 'i', 'o', 'u']])
 
-# print(input.count("aeiou"))
+# ---------- Approach 1: for loop with condition ----------
+for c in text:
+    if c.lower() in ['a', 'e', 'i', 'o', 'u']:
+        print(c)
 
-for c in range(len(input)):
-  if c in ['a', 'e', 'i', 'o', 'u']:
-    print(c)
+
+# ---------- Approach 2: list comprehension ----------
+print([c for c in text if c.lower() in ['a', 'e', 'i', 'o', 'u']])
+
+
+# ---------- Approach 3: count occurrences ----------
+# .count() only counts the exact substring "aeiou", not each vowel — so this is 0
+print(text.count("aeiou"))

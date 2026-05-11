@@ -1,3 +1,6 @@
-Weather = "Rainfall"
+# =============================================
+# Test / Scratchpad — string slicing
+# =============================================
 
-print(Weather[:4])
+weather = "Rainfall"
+print(weather[:4])     # 'Rain'

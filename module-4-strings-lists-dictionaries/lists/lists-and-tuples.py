@@ -1,36 +1,27 @@
+# =============================================
+# Lists and Tuples
+# Tuple: immutable sequence — order matters, positions have meaning
+# List:  mutable sequence  — can grow/shrink/change in place
+# =============================================
+
+# ---------- Tuple example ----------
 fullname = ('Grace', 'M', 'Hopper')
-#immutable sequence of elements
-#position in elemnts have meaning
+
+
+# ---------- Functions returning multiple values (as a tuple) ----------
 def convert_seconds(seconds):
-  hours = seconds // 3600
-  minutes = (seconds - hours * 3600) // 60
-  remaining_seconds = seconds - hours * 3600 - minutes * 60
-  return hours, minutes, remaining_seconds
+    hours = seconds // 3600
+    minutes = (seconds - hours * 3600) // 60
+    remaining_seconds = seconds - hours * 3600 - minutes * 60
+    return hours, minutes, remaining_seconds
+
+
+# ---------- Capture the returned tuple ----------
 result = convert_seconds(5000)
-type(result)
+print(type(result))     # <class 'tuple'>
+print(result)           # (1, 23, 20)
 
-# def convert_seconds(seconds):
-#   hours = seconds // 3600
-#   minutes = (seconds - hours * 3600) // 60
-#   remaining_seconds = seconds - hours * 3600 - minutes * 60
-#   return hours, minutes, remaining_seconds
-# result = convert_seconds(5000)
-# print(result)
 
-# def convert_seconds(seconds):
-#   hours = seconds // 3600
-#   minutes = (seconds - hours * 3600) // 60
-#   remaining_seconds = seconds - hours * 3600 - minutes * 60
-#   return hours, minutes, remaining_seconds
-# result = convert_seconds(5000)
-# hours, minutes, seconds = result
-# print(hours, minutes, seconds)
-
-# def convert_seconds(seconds):
-#   hours = seconds // 3600
-#   minutes = (seconds - hours * 3600) // 60
-#   remaining_seconds = seconds - hours * 3600 - minutes * 60
-#   return hours, minutes, remaining_seconds
-# hours, minutes, seconds = convert_seconds(1000)
-# print(hours, minutes, seconds)
-
+# ---------- Unpacking the tuple into variables ----------
+hours, minutes, seconds = convert_seconds(1000)
+print(hours, minutes, seconds)   # 0 16 40

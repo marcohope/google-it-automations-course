@@ -1,38 +1,35 @@
-x = ["Now", "we", "are", "cooking!"]
+# =============================================
+# What is a List?
+# An ordered, mutable sequence of items.
+# =============================================
 
 x = ["Now", "we", "are", "cooking!"]
-type(x)
-
-x = ["Now", "we", "are", "cooking!"]
-print(x)
-
-x = ["Now", "we", "are", "cooking!"]
-print(x)
-
-x = ["Now", "we", "are", "cooking!"]
-len(x)
-
-x = ["Now", "we", "are", "cooking!"]
-"are" in x
 
 
-x = ["Now", "we", "are", "cooking!"]
-"Today" in x
+# ---------- type() ----------
+print(type(x))           # <class 'list'>
 
-x = ["Now", "we", "are", "cooking!"]
-print(x[0])
-print(x[3])
 
-x = ["Now", "we", "are", "cooking!"]
-print(x[4])
+# ---------- print() ----------
+print(x)                 # ['Now', 'we', 'are', 'cooking!']
 
-#This last line will throw an error
 
-x = ["Now", "we", "are", "cooking!"]
-x[1:3]
+# ---------- len() ----------
+print(len(x))            # 4
 
-x = ["Now", "we", "are", "cooking!"]
-x[:2]
 
-x = ["Now", "we", "are", "cooking!"]
-x[2:]
+# ---------- Membership: `in` ----------
+print("are" in x)        # True
+print("Today" in x)      # False
+
+
+# ---------- Indexing (0-based) ----------
+print(x[0])              # 'Now'
+print(x[3])              # 'cooking!'
+# print(x[4])            # IndexError — out of range
+
+
+# ---------- Slicing ----------
+print(x[1:3])            # ['we', 'are']    (indices 1, 2)
+print(x[:2])             # ['Now', 'we']    (start through 1)
+print(x[2:])             # ['are', 'cooking!']  (index 2 to end)

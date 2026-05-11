@@ -1,16 +1,26 @@
+# =============================================
+# Intro to Strings
+# =============================================
+
+# ---------- Defining strings ----------
+# Strings can use single or double quotes — but they must match
 name = "Sasha"
 color = 'Gold'
 
-# place = "Cambridge'
-#This will throw an error
+# place = "Cambridge'   # SyntaxError — quote types mismatch
 
+# Empty string
 pet = ""
 
-name = "Sasha"
-color = 'Gold'
+
+# ---------- Concatenation ----------
 print("Name: " + name + ", Favorite color: " + color)
 
-"example" * 3
 
+# ---------- Repetition with * ----------
+print("example" * 3)        # 'exampleexampleexample'
+
+
+# ---------- len() — number of characters ----------
 pet = "loooooooooooooooooooooooooooooooong cat"
-len(pet)
+print(len(pet))             # 39

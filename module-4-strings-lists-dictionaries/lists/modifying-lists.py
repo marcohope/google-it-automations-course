@@ -1,19 +1,36 @@
+# =============================================
+# Modifying Lists — append, insert, remove, pop, index assignment
+# Lists are MUTABLE: you can change them in place.
+# =============================================
+
 fruits = ["Pineapple", "Banana", "Apple", "Melon"]
+
+
+# ---------- .append() — add to the end ----------
 fruits.append("Kiwi")
-# adds "Kiwi" to the end of the fruits list
 print(fruits)
+# ['Pineapple', 'Banana', 'Apple', 'Melon', 'Kiwi']
 
+
+# ---------- .insert(index, item) — add at a specific position ----------
 fruits.insert(0, "Orange")
-# takes an index as the first paramenter and an element as the second parameter then adds the element at the index
 print(fruits)
+# ['Orange', 'Pineapple', 'Banana', 'Apple', 'Melon', 'Kiwi']
 
+
+# ---------- .remove(value) — remove first matching value ----------
 fruits.remove("Pineapple")
 print(fruits)
+# ['Orange', 'Banana', 'Apple', 'Melon', 'Kiwi']
 
-fruits.pop(3)
-#removes element at index passed; in this case Melon
-print(fruits)
 
-fruits[2] = "Strawberry"
-#replaced the index with the element. So Apple with Strawberry 
+# ---------- .pop(index) — remove element at index ----------
+fruits.pop(3)             # removes 'Melon'
 print(fruits)
+# ['Orange', 'Banana', 'Apple', 'Kiwi']
+
+
+# ---------- Index assignment — replace an item ----------
+fruits[2] = "Strawberry"  # 'Apple' → 'Strawberry'
+print(fruits)
+# ['Orange', 'Banana', 'Strawberry', 'Kiwi']
